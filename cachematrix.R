@@ -1,7 +1,13 @@
-## Put comments here that give an overall description of what your
-## functions do
+##This functions avoid the need for recalculate an already 
+##calculated inverse from a matrix, getting the result 
+##from the cache
 
-## Write a short comment describing this function
+## Creates a new type of matrix containing 4 functions for:
+## setting the matrix
+## getting the matrix
+## setting the inverse
+## getting the inverse
+## It's a lot like the vectormean example
 
 makeCacheMatrix <- function(x = matrix()) {
  m <- NULL
@@ -18,7 +24,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+# This function checks if we already have the inverse of the matrix, if we already have
+# it,it get it from the cache, otherwise the inverse is calculated
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
